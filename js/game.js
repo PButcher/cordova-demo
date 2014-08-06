@@ -4,7 +4,6 @@ $(document).ready(function() {
 		$('#landing').hide();
 		init();
 	});
-
 });
 
 var canvasWidth = window.innerWidth;
@@ -29,17 +28,13 @@ function draw() {
 	ctx.clearRect(0,0, canvasWidth,canvasHeight);
 	ctx.beginPath();
 	ctx.fillStyle = "rgba(255,255,255,.5)";
-
-	// Draws a circle of radius 20 at the coordinates 100,100 on the canvas
 	ctx.arc(x,y,10,0,Math.PI*2,true);
 	ctx.closePath();
 	ctx.fill();
-
-	// Boundary Logic
-	if( x<0 || x>canvasWidth) dx=-dx; 
-	if( y<0 || y>canvasHeight) dy=-dy; 
-	x+=dx;
-	y+=dy;
+	if( x < 0 || x > canvasWidth) dx = -dx; 
+	if( y < 0 || y > canvasHeight) dy = -dy; 
+	x += dx;
+	y += dy;
 }
 
 $(window).resize(function() {
