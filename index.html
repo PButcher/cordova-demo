@@ -2,9 +2,21 @@
 <html>
 	<head>
 		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<meta name="viewport" content="width=device-width, user-scalable=no" />
 	</head>
 	<body>
+		<div id="wrapper" class="wrapper">
+			<section id="landing">
+				<a href="#" id="begin" class="begin">
+					<p>Start</p>
+				</a>
+			</section>
+			<section id="game">
+				<canvas id="ball-pit"></canvas>
+			</section>
+		</div>
 	</body>
 </html>
