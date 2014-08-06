@@ -1,4 +1,4 @@
-phonegap-demo
+cordova-demo
 =============
 
-Phonegap Demonstration
+Cordova Demonstration
