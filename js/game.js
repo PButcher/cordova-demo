@@ -8,7 +8,6 @@ $(document).ready(function() {
 
 var canvasWidth = window.innerWidth;
 var canvasHeight = window.innerHeight;
-
 var ctx;
 var framerate = 30;
 var x = canvasWidth / 2;
@@ -25,10 +24,11 @@ function init() {
 }
 
 function draw() {
-	ctx.clearRect(0,0, canvasWidth,canvasHeight);
+
+	ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 	ctx.beginPath();
 	ctx.fillStyle = "rgba(255,255,255,.5)";
-	ctx.arc(x,y,10,0,Math.PI*2,true);
+	ctx.arc(x, y, 10, 0, Math.PI*2, true);
 	ctx.closePath();
 	ctx.fill();
 	if( x < 0 || x > canvasWidth) dx = -dx; 
