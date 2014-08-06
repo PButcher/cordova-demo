@@ -46,4 +46,6 @@ $(window).resize(function() {
 
 	canvasWidth = window.innerWidth;
 	canvasHeight = window.innerHeight;
+	ctx.canvas.width = canvasWidth;
+	ctx.canvas.height = canvasHeight;
 });
