@@ -1,4 +1,4 @@
 cordova-demo
 =============
 
-Cordova Demonstration
+Cordova demonstration bouncing a ball around your screen
